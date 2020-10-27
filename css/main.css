@@ -1,0 +1,21 @@
+body {
+  font-family: helvetica;
+}
+
+ul { /* selects which html element to style*/
+  font-family: monospace;
+}
+
+li { /*  */
+  list-style: circle;
+}
+
+.list { /* selects a custom class */
+  list-style: square;
+}
+
+#date { /* selects an custom ID */
+  font-size: 12px;
+  font-style: italic;
+  font-weight: bold;
+}

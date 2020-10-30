@@ -7,6 +7,11 @@
   background-color: #e51c23 !important;
 }
 
+.marginbody {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
 .materialize-red-text {
   color: #e51c23 !important;
 }

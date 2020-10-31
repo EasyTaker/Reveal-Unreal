@@ -12,3 +12,7 @@
 .icon-block .material-icons {
 	font-size: inherit;
 }
+
+i.icon-orange {
+    color: #d37300;
+}

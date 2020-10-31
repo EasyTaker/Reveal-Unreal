@@ -9,6 +9,9 @@ div.center {
   transform: translate(-50%, -50%);
 }
 
+i.icon-orange {
+    color: #d37300;
+}
 
 
 
@@ -1672,11 +1675,11 @@ div.center {
 }
 
 .orange {
-  background-color: #ff9800 !important;
+  background-color: #d37300 !important;
 }
 
 .orange-text {
-  color: #ff9800 !important;
+  color: #d37300 !important;
 }
 
 .orange.lighten-5 {

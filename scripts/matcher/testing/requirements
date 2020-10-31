@@ -1,0 +1,11 @@
+numpy
+torch
+torchvision
+torchaudio
+nltk
+pandas
+scikit-learn
+gensim
+requests
+bs4
+html5lib

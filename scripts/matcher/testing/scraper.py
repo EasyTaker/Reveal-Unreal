@@ -12,11 +12,12 @@ def get_page_content_bfsoup(url, parser="html5lib"):
     content = BeautifulSoup(response.content.decode(), parser)
     return content
 
-def get_texts(*urls, depth=4, i=0, path="data/", title="first"):
+def get_texts(*urls, depth=3, i=0, path="data/", title="first"):
     urls = list(urls)
     title = title.replace("/","")
+    j=0
     while len(urls) and depth:
-        print(i, depth)
+        if depth > 1: print(i, j, depth)
         url = urls.pop()
         content = get_page_content_bfsoup(url)
 
@@ -35,11 +36,14 @@ def get_texts(*urls, depth=4, i=0, path="data/", title="first"):
                 title = paragraphs[0][:5]
             else:
                 continue
-            if 'class' not in a.attrs and 'href' in a.attrs and title not in os.listdir():
+            if 'class' not in a.attrs and 'href' in a.attrs and title+".txt" not in os.listdir() and depth-1>0:
                 try:
                     i = get_texts(href_url(a.attrs["href"]), depth=depth-1, i=i, title=title)
+                    j+=1
                 except Exception as e:
                     continue
+
+        if depth>1: print(i, j, depth)
     return i
 
 

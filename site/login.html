@@ -4,31 +4,31 @@
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
   <!--Let browser know website is optimized for mobile-->
+  <style>.pad {padding-top: 200px; padding-left: 400px; padding-right: 400px;}</style>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Reveal:Unreal</title>
-  <style>.pad {padding-top: 200px; padding-left: 400px; padding-right: 400px; padding-bottom: 200px;}</style>
 </head>
 <body>
   <script type="text/javascript" src="js/materialize.min.js"></script>
-  <nav style = "background-color: black;">
-    <div class="nav-wrapper" height="300px">
+  <nav style = "background-color: black;" height="100%">
+    <div class="nav-wrapper" height="150px">
       <a href="index.html" class="brand-logo" style="margin-left:200px;">
-        <div>
-          <img src="assets/logo/icon.png" height= "65px" width="auto">
+        <div style ="padding-top: 10px; padding-bottom: 10px;">
+          <img src="assets/logo/icon.png" height= "70px" width="auto">
         </div>
       </a>
       <ul id="nav-mobile" class="right hide-on-med-and-down" style="margin-right:200px;">
-        <li><a href="newsFeed.html"><i class="large material-icons">home</i></a></li>
-        <li><a href="about.html"><i class="large material-icons">search</i></a></li>
-        <li><a href="login.html"><i class="large material-icons">person</i></a></li>
+        <li height="70px"><a href="mainPage.html"><i class="small material-icons"style ="padding-top:35px">home</i></a></li>
+        <li height="70px"><a href="newsFeed.html"><i class="medium material-icons" style ="padding-top:35px">search</i></a></li>
+        <li height="70px"><a href="login.html"><i class="large material-icons"style ="padding-top:35px">person</i></a></li>
       </ul>
     </div>
   </nav>
   <div class="pad" style ="text-align: center;">
     <div class="row" style="border: 2px solid grey; border-radius: 100px;">
-      <form class="col s12"style ="padding-left: 100px;padding-right: 100px; padding-top: 50px; padding-bottom: 50px;" >
+      <form class="col s12"style ="padding-left: 100px;padding-right: 100px; padding-top: 50px; padding-bottom: 50px;">
         <div class="row">
           <i class="large material-icons">account_circle</i>
         </div>
@@ -38,7 +38,6 @@
             <label for="password">Username</label>
           </div>
         </div>
-        <hr width=100% style ="text-align: center; color: grey;">
         <div class="row"style="padding-left: 100px;padding-right: 100px;">
           <div class="input-field col s12">
             <input id="password" type="password" class="validate">
@@ -47,7 +46,7 @@
         </div>
         <p style ="text-align: center;">
           <label>
-            <input type="checkbox" checked="unchecked" />
+            <input type="checkbox" checked="unchecked"/>
             <span>I am a returning user.</span>
           </label>
         </p>

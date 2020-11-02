@@ -1,7 +1,5 @@
 numpy
 torch
-torchvision
-torchaudio
 nltk
 pandas
 scikit-learn
